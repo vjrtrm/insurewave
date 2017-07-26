@@ -1,0 +1,22 @@
+syntax: glob
+
+# system
+.DS_store
+*.pyc
+*.db
+
+# node
+node_modules
+npm-debug.log
+
+# sass
+.sass-cache
+src/css
+
+# sprite
+src/img/common/sprite.png
+
+# webpack
+src/js/build/*/*.js
+src/js/build/*/*.js.map
+src/js/stats/*.json
