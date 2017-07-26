@@ -3,3 +3,9 @@
 @import "core/buttons";
 @import "core/mixins";
 @import "core/utils";
+
+
+.wrapper{
+    width: $container-large;
+    margin: 0 auto;
+}

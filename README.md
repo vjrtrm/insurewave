@@ -6,10 +6,10 @@
 
 ```shell
 # Before install you need to clone the repo.
-git clone git@github.com:hebertsilva/node-sass-boilerplate.git
+git clone https://github.com/vjrtrm/insurewave.git
 
 # Enter in folder
-cd node-sass-boilerplate
+cd insurewave
 
 # Install packages
 npm install
