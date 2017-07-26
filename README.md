@@ -1,4 +1,4 @@
-# node-sass-boilerplate
+# Insurewave
 
 [![Build Status](https://travis-ci.org/hebertsilva/node-sass-boilerplate.svg)](https://travis-ci.org/hebertsilva/node-sass-boilerplate)
 
