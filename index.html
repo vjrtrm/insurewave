@@ -14,136 +14,168 @@
     <link rel="stylesheet" type="text/css" href="src/css/views/base.css">
 </head>
 <body>
-    <div class="wrapper">
+<div class="wrapper">
     <header>
         <div class="logo"><img src="src/img/insurewave_logo.png" alt="Insurewave" /></div>
         <div class="topmenu">
             <ul>
-                <li>Find Plans</li>
-                <li>Services</li>
-                <li>Customer Support</li>
+                <li><a href="#">Find Plans</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Customer Support</a></li>
             </ul>
         </div>
         <div class="contact">
-            <span>(888) 555-1212 </span>
-            <span>Speak to a licensed agent</span>
+            <span class="phone">(888) 555-1212 </span>
+            <span class="agent">Speak to a licensed agent</span>
         </div>
     </header>
-    <div class="content">
-        <div class="banner">
-            <div>Get a personalized quote today!</div>
-            <div>Choose your plan</div>
+
+    <section class="banner">
+        <div class="first">Get a personalized quote today!</div>
+        <div class="second">Choose your plan</div>
+        <div class="form">
             <select>
                 <option value="HealthInsurance">Health Insurance</option>
             </select>
             <input type="text" name="ZipCode" placeholder="Zip Code" />
             <input type="button" value="Go">
         </div>
-        <div class="innerContent">
-            <section class="whyInsurance">
-                <div>
-                   <h2>WHY INSUREWAVE</h2> 
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                   <input type="button" value="LEARN MORE ABOUT US">
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <span>21</span>
-                            <span>Years In Business</span>
-                        </li>
-                        <li>
-                            <span>1200+</span>
-                            <span>Policies Sold</span>
-                        </li>
-                        <li>
-                            <span>$3.1</span>
-                            <span>Millions Premiums Enrolled</span>
-                        </li>
-                        <li>
-                            <span>4</span>
-                            <span>Agent of The Year Awards</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="toolsAndResources">
-                <div>Our Tools and Resources</div>
-                <div>
-                    <div>
-                        <h2>Find a Doctor</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                    </div>
-                    <div>
-                        <h2>Forms &amp; Applications</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                    </div>
-                </div>
-            </section>
-            <section class="professioinalServices">
+    </section>
+        
+    <section class="whyInsurewave">
+        <div class="answer">
+            <h2>WHY INSUREWAVE</h2> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <input type="button" value="LEARN MORE ABOUT US">
+        </div>
+        <div class="achievements">
+            <ul>
+                <li>
+                    <span><img src="src/img/flag_icon.png" alt="Insurewave" width="24" height="42"/></span>
+                    <span class="number">21</span>
+                    <span class="description">Years In Business</span>
+                </li>
+                <li>
+                    <span><img src="src/img/doc_icon.png" alt="Insurewave" width="34" height="43"/></span>
+                    <span class="number">1200+</span>
+                    <span class="description">Policies Sold</span>
+                </li>
+                <li>
+                    <span><img src="src/img/people_icon.png" alt="Insurewave" width="46" height="48"/></span>
+                    <span class="number">$3.1</span>
+                    <span class="description">Millions Premiums Enrolled</span>
+                </li>
+                <li>
+                    <span><img src="src/img/cup_icon.png" alt="Insurewave" width="37" height="43"/></span>
+                    <span class="number">4</span>
+                    <span class="description">Agent of The Year Awards</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+        
+    <section class="toolsAndResourcesHeading">
+        <h2>Our Tools and Resources</h2>
+    </section>
+        
+    <section class="toolsAndResources">
+        <div class="col-left">
+            <div class="resource">
+                <img src="src/img/search_icon.png" alt="Insurewave" width="40" height="40"/>
+                <h2>Find a Doctor</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+            <div class="resource">
+                <img src="src/img/doc2_icon.png" alt="Insurewave" width="32" height="46"/>
+                <h2>Forms &amp; Applications</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
+        <div class="col-right">
+            <img src="src/img/video_image.png" alt="Insurewave" width="669" height="367"/>
+            <p><a href="#">More Videos</a></p>
+        </div>
+    </section>
+
+    <section class="professioinalServices">
+        <h2>Professional Services</h2>
+        <ul class="menu">
+            <li><a href="#">Health</a></li> 
+            <li><a href="#">Dental</a></li> 
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Travel</a></li> 
+            <li><a href="#">Long Term care</a></li>
+            <li><a href="#">Life Insurance</a></li> 
+            <li><a href="#">Short Term Health</a></li>
+            <li><a href="#">Disability Insurance</a></li>
+        </ul>
+        <div id="professionalServicesTab" class="tab">
+            <div class="col-left">
+                <img src="src/img/long-term-care.png" alt="Insurewave" width="400" height="262" />
+            </div>
+            <div class="col-right">
+                <h3>Long Term Care Insurance</h3>
                 <ul>
-                    <li>Health</li> 
-                    <li>Dental</li> 
-                    <li>Vision</li>
-                    <li>Travel</li> 
-                    <li>Long Term care</li>
-                    <li>Life Insurance</li> 
-                    <li>Short Term Health</li>
-                    <li>Disability Insurance</li>
+                    <li>Achieve a 20% or more increase in orders and revenue within first 30 days of program implementation,</li>
+                    <li>Achieve 'personalization' of customer journeys / emails,</li>
+                    <li>Get your internal processes,</li>
+                    <li>We can help personalize and segment your customers better than internal siloed Market Insight, Business Intelligence teams and CRM teams,</li>
+                    <li>We can help guide Marketing and IT teams with tried and true eCommerece strategies,</li>
+                    <li>We can deploy dynamic online and offline marketing touchpoints.</li>
                 </ul>
-                <div>
-                    <h2>Long Term Care Insurance</h2>
-                    <ul>
-                        <li>Achieve a 20% or more increase in orders and revenue within first 30 days of program implementation,</li>
-                        <li>Achieve 'personalization' of customer journeys / emails,</li>
-                        <li>Get your internal processes,</li>
-                        <li>We can help personalize and segment your customers better than internal siloed Market Insight, Business Intelligence teams and CRM teams,</li>
-                        <li>We can help guide Marketing and IT teams with tried and true eCommerece strategies,</li>
-                        <li>We can deploy dynamic online and offline marketing touchpoints.</li>
-                    </ul>
-                </div>
-            </section>
-            <section>
+            </div>  
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="tab">
+            <span class="leftArrow"><img src="src/img/arrow_left_icon.png" alt="Insurewave" width="11" height="20" /></span>
+            <div class="content">
                 <h2>Our Clients Love Us For A Real Reason</h2>
+                <img src="src/img/testimonials.png" alt="Insurewave" width="217" height="216" />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <div>JANE | CEO at webDAE</div>
-            </section>
+                <div><strong>JANE</strong> | CEO at webDAE</div>
+            </div>
+            <span class="rightArrow"><img src="src/img/arrow_right_icon.png" alt="Insurewave" width="11" height="20" /></span>
         </div>
-    </div>
+    </section>
+        
     <footer>
-        <div class="siteMap">
-            <div>Site Map</div>
-            <ul>
-                <li>Home</li>
-                <li>Plans</li>
-                <li>Why Insurewave?</li>
-                <li>Services</li>
-                <li>Find a Doctor</li>
-                <li>Forms &amp; Applications</li>
-                <li>Videos</li>
-                <li>Testimonials</li>
-                <li>Customer Support</li>
-            </ul>
-        </div>
-        <div class="LatestBlogArticles">
-            <div>Latest Blog Articles</div>
-            <ul>
-                <li>Tips When Buying Health Insurance</li>
-                <li>How to Pick the Right Travel Insurance Pack</li>
-                <li>Benefits of Group Health Insurance</li>
-                <li>How to Process on Insurance Claim</li>
-                <li>Benefits of Having a Health Insurance Plan</li>
-            </ul>
-        </div>
-        <div class="contactUs">
-            <div>Get In Touch With Us</div>
-            <input type="text" name="name" placeholder="Name" />
-            <input type="text" name="email" placeholder="Email" />
-            <input type="text" name="message" placeholder="Enter your message" />
-            <input type="submit" value="Send">
+        <div class="footerWrapper">
+            <div class="siteMap">
+                <h2>Site Map</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Why Insurewave?</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Find a Doctor</a></li>
+                    <li><a href="#">Forms &amp; Applications</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </ul>
+            </div>
+            <div class="LatestBlogArticles">
+                <h2>Latest Blog Articles</h2>
+                <ul>
+                    <li><a href="#">Tips When Buying Health Insurance</a></li>
+                    <li><a href="#">How to Pick the Right Travel Insurance Pack</a></li>
+                    <li><a href="#">Benefits of Group Health Insurance</a></li>
+                    <li><a href="#">How to Process on Insurance Claim</a></li>
+                    <li><a href="#">Benefits of Having a Health Insurance Plan</a></li>
+                </ul>
+            </div>
+            <div class="contactUs">
+                <h2>Get In Touch With Us</h2>
+                <input type="text" name="name" placeholder="Name" />
+                <input type="text" name="email" placeholder="Email" />
+                <input type="text" name="message" placeholder="Enter your message" />
+                <input type="submit" value="Send">
+            </div>
         </div>
     </footer>       
 </div>

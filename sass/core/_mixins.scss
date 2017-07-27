@@ -63,6 +63,30 @@
     }
 }
 
+@mixin Poppins-Regular(){
+    font-family: "Poppins-Regular";
+    font-size: 1em;
+    color: $color-fontRegular;
+}
+
+@mixin Poppins-Medium(){
+    font-family: "Poppins-Medium";
+    font-size: 1em;
+    color: $color-fontBold;
+}
+
+@mixin Poppins-SemiBold(){
+    font-family: "Poppins-SemiBold";
+    font-size: 2em;
+    color: $color-fontBold;
+}
+
+@mixin Poppins-Light(){
+    font-family: "Poppins-Light";
+    font-size: 3em;
+    color: $color-fontLight;
+}
+
 /*
     ## Forms
 */
@@ -146,4 +170,15 @@
             }
         }
     }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+@mixin center-align(){
+    width: $container-large;
+    margin: 0 auto;
 }

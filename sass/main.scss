@@ -4,8 +4,318 @@
 @import "core/mixins";
 @import "core/utils";
 
+/*
+Font Details 
+
+"Poppins-Light", 
+"Poppins-Regular"
+"Poppins-Medium",
+"Poppins-SemiBold
+"Poppins-Bold"
+"BebasNeue"
+"BEBAS"
+*/
 
 .wrapper{
-    width: $container-large;
-    margin: 0 auto;
+    font-family: "Poppins-Regular";
+}
+
+header{
+    @include center-align();
+    margin-top:2%;
+    overflow: auto;
+    .logo{
+        float: left;
+        padding-right: 10%;
+    }
+    .topmenu{
+        float: left;
+        width: 40%;
+        margin-top: 3%; 
+        ul{
+            li{
+                display: inline;
+                margin-left: 5%;
+                a{
+                    @include Poppins-Medium();
+                    color: $color-fontLight;
+                }
+            }
+        }
+    }
+    .contact{
+        background: #fff none repeat scroll 0 0;
+        @include border-radius(5px);
+        float: left;
+        height: 75px;
+        margin-left: 5%;
+        position: relative;
+        width: 20%;
+        .phone{
+            @include Poppins-SemiBold();
+            background: #fff url("/src/img//phone_icon.png") no-repeat scroll 5% center;
+            color: $color-fontRegular;
+            display: block;
+            font-size: 1.5em;
+            height: 60%;
+            padding-top: 8%;
+            text-align: center;
+        }
+        .agent{
+            @include Poppins-Regular();
+            background: #106092 none repeat scroll 0 0;
+            display: block;
+            color: $color-fontLight;
+            height: 40%;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            padding-top: 2%;
+        }
+    }
+}  
+.banner{
+    @include center-align();
+    margin-top: 10%;
+    color: $color-fontLight;
+    margin-top: 15%;
+    .first{
+        font-family: "BebasNeue";
+        font-size: 3.3em;
+    }
+    .second{
+        font-family: "BebasNeue";
+        font-size: 6em;
+    }
+    .form{
+        margin-top: 3%;
+    }
+}
+.whyInsurewave{
+    @include center-align();
+    margin-top: 15%;
+    overflow: auto;
+    div{
+        float: left;
+        width: 50%;
+    }
+    .answer{
+        padding-top: 5%;
+        h2{
+            @include Poppins-SemiBold();
+            width: 100%; 
+        }
+        p{
+            @include Poppins-Regular();
+            line-height:2em;
+            padding: 5% 0 0;
+        }
+    }
+    .achievements{
+        padding-left: 10%;
+        ul{
+            li{
+                width: 50%;
+                padding: 5% 10%;
+                display: block;
+                float: left;
+                text-align: center;
+                span{
+                    display: block;
+                    padding:5px;
+                }
+                span.number{
+                    @include Poppins-SemiBold();
+                }
+                span.description{
+                    @include Poppins-Regular();
+                }
+            }
+        }
+    }
+}
+
+.toolsAndResourcesHeading{
+    @mixin tools-resources-background(){
+        background: rgb(24, 100, 156) none repeat scroll 0 0;
+        background: -webkit-linear-gradient(355deg, rgb(24, 100, 156) 0%, rgb(24, 100, 156) 100%);
+        background: -o-linear-gradient(355deg, rgb(24, 100, 156) 0%, rgb(24, 100, 156) 100%);
+        background: -ms-linear-gradient(355deg, rgb(24, 100, 156) 0%, rgb(24, 100, 156) 100%);
+        background: -moz-linear-gradient(355deg, rgb(24, 100, 156) 0%, rgb(24, 100, 156) 100%);
+        background: linear-gradient(95deg, rgb(24, 100, 156) 0%, rgb(24, 100, 156) 100%);
+    }
+    position: relative;
+    @include tools-resources-background();
+    margin: 10% 0;
+    h2{
+        @include Poppins-Light();
+        text-align: center;
+        padding:0.5em;
+    }
+    ::before{
+        @include tools-resources-background();
+        content: "";
+        height: 100%;
+        left: 0;
+        margin-top: -4%;
+        position: absolute;
+        top: 0;
+        transform: skewY(1deg);
+        width: 100%;
+    }
+    ::after{
+        @include tools-resources-background();
+        content: "";
+        height: 100%;
+        left: 0;
+        margin-bottom: -4%;
+        position: absolute;
+        bottom: 0;
+        transform: skewY(-1deg);
+        width: 100%;
+    }
+}
+
+.toolsAndResources{
+    @include center-align();
+    overflow: auto;
+    border-bottom:2px solid $color-border;
+    padding-bottom: 2%;
+    .col-left{
+        float:left;
+        width: 35%;
+        .resource{
+            h2{
+                @include Poppins-SemiBold();
+                padding:5% 0;
+            }
+            p{
+                @include Poppins-Regular();
+                line-height:2em;
+                padding: 0 0 5%;
+            }
+        }
+    }
+    .col-right{
+        float:left;
+        width: 50%;
+        margin-left: 5%;
+        p{
+            text-align: center;
+        }
+    }
+}
+
+.professioinalServices{
+    @include center-align();
+    overflow: auto;
+    h2{
+        @include Poppins-SemiBold();
+        text-align: center;
+        margin:5% 0;
+    }
+    ul.menu{
+        width: 100%;
+        padding-bottom: 5%; 
+        li{
+            display: inline-block;
+            padding: 2%;
+            a{
+                @include Poppins-Medium();
+            }
+        }
+    }
+    .tab{
+        width: 100%;
+        overflow: auto;
+        .col-left{
+            float:left;
+            width: 50%;
+        }
+        .col-right{
+            float:left;
+            width: 50%;
+        }
+        img{
+            padding: 2%;
+        }
+        h3{
+            @include Poppins-Medium();
+            font-size: 1.5em;
+        }
+        ul{
+            margin: 5%;
+            li{
+                 @include Poppins-Regular();
+                 line-height: 2em;
+                 list-style-image: url(#{$path-image-directories}/tick_icon.png);
+            }
+        }
+    }
+}
+
+.testimonials{
+    position: relative;
+    background: $color-bottom-bg;
+    .tab{
+        @include center-align();
+        border-bottom:2px solid $color-border;
+        padding-bottom: 2%;
+        .leftArrow, .rightArrow{
+            position: absolute;
+            top:50%;
+        }
+        .leftArrow{
+            left:0;
+        }
+        .rightArrow{
+            right:0;
+        }
+        .content{
+            text-align: center;
+            width: 60%;
+            margin: 10% 20%;
+            h2{
+                @include Poppins-Regular();
+                font-size: 2em;
+            }
+            p{
+                @include Poppins-Regular();
+                line-height: 2em;
+                padding: 2% 0;
+            }
+        }
+    }
+}
+
+footer{
+    background: $color-bottom-bg;
+    padding:2%;
+    overflow: auto;
+    .footerWrapper{
+        @include center-align();
+        h2{
+            @include Poppins-Medium();
+            font-size: 1.5em;
+        }
+        div{
+            float:left;
+            width: 30%;
+            ul{
+                margin: 5%;
+                li{
+                    padding: 1% 0;
+                    line-height: 2em;
+                    list-style-image: url(#{$path-image-directories}/list_arrow_icon.png);
+                    a{
+                        @include Poppins-Regular();
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+        div.contactUs{
+            float: right;
+        }
+    }
 }

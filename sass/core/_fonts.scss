@@ -6,6 +6,14 @@
     `core/_fonts.scss`
 */
 
-@include make-font($font-1, "font_name", 400);
-@include make-font($font-1, "font_name", 600);
-@include make-font($font-1, "font_name", 700);
+ @include make-font($font-1, "font_name", 400);
+ @include make-font($font-1, "font_name", 600);
+ @include make-font($font-1, "font_name", 700);
+
+@include font-face("Poppins-Light", "../fonts/poppins/Poppins-Light", null, null, "ttf");
+@include font-face("Poppins-Regular", "../fonts/poppins/Poppins-Regular", null, null, "ttf");
+@include font-face("Poppins-Medium", "../fonts/poppins/Poppins-Medium", null, null, "ttf");
+@include font-face("Poppins-SemiBold", "../fonts/poppins/Poppins-SemiBold", null, null, "ttf");
+@include font-face("Poppins-Bold", "../fonts/poppins/Poppins-Bold", null, null, "ttf");
+@include font-face("BebasNeue", "../fonts/bebas_neue/BebasNeue", null, null, "otf");
+@include font-face("BEBAS", "../fonts/bebas/BEBAS", null, null, "ttf");
