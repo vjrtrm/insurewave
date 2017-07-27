@@ -257,10 +257,23 @@ header{
 .testimonials{
     position: relative;
     background: $color-bottom-bg;
+    &::before{
+        background: $color-bottom-bg;
+        content: "";
+        height: 100%;
+        left: 0;
+        margin-top: -4%;
+        position: absolute;
+        top: 0;
+        transform: skewY(1deg);
+        width: 100%;
+        z-index: 0
+    }
     .tab{
         @include center-align();
         border-bottom:2px solid $color-border;
         padding-bottom: 2%;
+        position: relative;
         .leftArrow, .rightArrow{
             position: absolute;
             top:50%;
