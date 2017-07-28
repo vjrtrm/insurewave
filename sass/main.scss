@@ -53,7 +53,7 @@ header{
         width: 20%;
         .phone{
             @include Poppins-SemiBold();
-            background: #fff url("/src/img//phone_icon.png") no-repeat scroll 5% center;
+            background: #fff url(#{$path-image-directories}phone_icon.png) no-repeat scroll 5% center;
             color: $color-fontRegular;
             display: block;
             font-size: 1.5em;
@@ -147,32 +147,34 @@ header{
     position: relative;
     @include tools-resources-background();
     margin: 10% 0;
-    h2{
-        @include Poppins-Light();
-        text-align: center;
-        padding:0.5em;
-    }
-    ::before{
+    :before{
         @include tools-resources-background();
         content: "";
-        height: 100%;
+        height: 40%;
         left: 0;
-        margin-top: -4%;
+        margin-top: -1%;
         position: absolute;
         top: 0;
         transform: skewY(1deg);
         width: 100%;
+        z-index: 0;
     }
-    ::after{
+    :after{
         @include tools-resources-background();
         content: "";
-        height: 100%;
+        height: 40%;
         left: 0;
-        margin-bottom: -4%;
+        margin-bottom: -1%;
         position: absolute;
         bottom: 0;
         transform: skewY(-1deg);
         width: 100%;
+        z-index: 0;
+    }
+    h2{
+        @include Poppins-Light();
+        text-align: center;
+        padding:0.5em;
     }
 }
 
@@ -248,7 +250,7 @@ header{
             li{
                  @include Poppins-Regular();
                  line-height: 2em;
-                 list-style-image: url(#{$path-image-directories}/tick_icon.png);
+                 list-style-image: url(#{$path-image-directories}tick_icon.png);
             }
         }
     }
@@ -262,10 +264,10 @@ header{
         content: "";
         height: 100%;
         left: 0;
-        margin-top: -4%;
+        margin-top: -3%;
         position: absolute;
         top: 0;
-        transform: skewY(1deg);
+        transform: skewY(2deg);
         width: 100%;
         z-index: 0
     }
@@ -319,7 +321,7 @@ footer{
                 li{
                     padding: 1% 0;
                     line-height: 2em;
-                    list-style-image: url(#{$path-image-directories}/list_arrow_icon.png);
+                    list-style-image: url(#{$path-image-directories}list_arrow_icon.png);
                     a{
                         @include Poppins-Regular();
                         font-size: 1.2em;

@@ -4,5 +4,5 @@ body {
     @include font($font-1, 400);
     font-size: $font-size-default;
     color: $color-black;
-    background: url(#{$path-image-directories}/banner.png) no-repeat right top;
+    background: url(#{$path-image-directories}banner.png) no-repeat right top;
 }
