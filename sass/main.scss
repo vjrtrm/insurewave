@@ -147,7 +147,7 @@ header{
     position: relative;
     @include tools-resources-background();
     margin: 10% 0;
-    :before{
+    div:before{
         @include tools-resources-background();
         content: "";
         height: 52%;
@@ -159,7 +159,7 @@ header{
         width: 100%;
         z-index: 0;
     }
-    :after{
+    div:after{
         @include tools-resources-background();
         content: "";
         height: 52%;
@@ -175,6 +175,8 @@ header{
         @include Poppins-Light();
         text-align: center;
         padding:0.5rem;
+        position: relative;
+        z-index: 999;
     }
 }
 
@@ -245,7 +247,7 @@ header{
     position: relative;
     background: $color-bottom-bg;
     margin-top:10%;
-    &::before{
+    &:before{
         background: $color-bottom-bg;
         content: "";
         height: 100%;
