@@ -4,6 +4,9 @@
 @import "core/mixins";
 @import "core/utils";
 
+$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 /*
 Font Details 
 
@@ -20,17 +23,18 @@ Font Details
     font-family: "Poppins-Regular";
 }
 
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
 header{
-    @include center-align();
     margin-top:2%;
     overflow: auto;
     .logo{
-        float: left;
         padding-right: 10%;
     }
     .topmenu{
-        float: left;
-        width: 40%;
         margin-top: 3%; 
         ul{
             li{
@@ -46,7 +50,6 @@ header{
     .contact{
         background: #fff none repeat scroll 0 0;
         @include border-radius(5px);
-        float: left;
         height: 75px;
         margin-left: 5%;
         position: relative;
@@ -56,7 +59,7 @@ header{
             background: #fff url(#{$path-image-directories}phone_icon.png) no-repeat scroll 5% center;
             color: $color-fontRegular;
             display: block;
-            font-size: 1.5em;
+            font-size: 1.2rem;
             height: 60%;
             padding-top: 8%;
             text-align: center;
@@ -75,25 +78,23 @@ header{
     }
 }  
 .banner{
-    @include center-align();
     margin-top: 10%;
     color: $color-fontLight;
     margin-top: 15%;
     .first{
         font-family: "BebasNeue";
-        font-size: 3.3em;
+        font-size: 3.3rem;
     }
     .second{
         font-family: "BebasNeue";
-        font-size: 6em;
+        font-size: 6rem;
     }
     .form{
         margin-top: 3%;
     }
 }
 .whyInsurewave{
-    @include center-align();
-    margin-top: 15%;
+    margin-top: 18%;
     overflow: auto;
     div{
         float: left;
@@ -107,12 +108,11 @@ header{
         }
         p{
             @include Poppins-Regular();
-            line-height:2em;
+            line-height:2rem;
             padding: 5% 0 0;
         }
     }
     .achievements{
-        padding-left: 10%;
         ul{
             li{
                 width: 50%;
@@ -179,13 +179,10 @@ header{
 }
 
 .toolsAndResources{
-    @include center-align();
     overflow: auto;
     border-bottom:2px solid $color-border;
     padding-bottom: 2%;
     .col-left{
-        float:left;
-        width: 35%;
         .resource{
             h2{
                 @include Poppins-SemiBold();
@@ -199,17 +196,13 @@ header{
         }
     }
     .col-right{
-        float:left;
-        width: 50%;
-        margin-left: 5%;
         p{
             text-align: center;
         }
     }
 }
 
-.professioinalServices{
-    @include center-align();
+.professionalServices{
     overflow: auto;
     h2{
         @include Poppins-SemiBold();
@@ -230,16 +223,8 @@ header{
     .tab{
         width: 100%;
         overflow: auto;
-        .col-left{
-            float:left;
-            width: 50%;
-        }
-        .col-right{
-            float:left;
-            width: 50%;
-        }
         img{
-            padding: 2%;
+            padding: 2%;            
         }
         h3{
             @include Poppins-Medium();
@@ -259,6 +244,7 @@ header{
 .testimonials{
     position: relative;
     background: $color-bottom-bg;
+    margin-top:10%;
     &::before{
         background: $color-bottom-bg;
         content: "";
@@ -272,9 +258,7 @@ header{
         z-index: 0
     }
     .tab{
-        @include center-align();
         border-bottom:2px solid $color-border;
-        padding-bottom: 2%;
         position: relative;
         .leftArrow, .rightArrow{
             position: absolute;
@@ -299,6 +283,9 @@ header{
                 line-height: 2rem;
                 padding: 2% 0;
             }
+            img{
+                display: inline-block !important;
+            }
         }
     }
 }
@@ -308,14 +295,11 @@ footer{
     padding:2%;
     overflow: auto;
     .footerWrapper{
-        @include center-align();
         h2{
             @include Poppins-Medium();
             font-size: 1.5rem;
         }
         div{
-            float:left;
-            width: 30%;
             ul{
                 margin: 5%;
                 li{

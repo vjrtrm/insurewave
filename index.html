@@ -15,22 +15,22 @@
 </head>
 <body>
 <div class="wrapper">
-    <header>
-        <div class="logo"><img src="src/img/insurewave_logo.png" alt="Insurewave" /></div>
-        <div class="topmenu">
+    <header class="container">
+        <div class="logo col-sm-4"><img src="src/img/insurewave_logo.png" alt="Insurewave" /></div>
+        <div class="topmenu col-sm-4">
             <ul>
                 <li><a href="#">Find Plans</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Customer Support</a></li>
             </ul>
         </div>
-        <div class="contact">
+        <div class="contact col-sm-4 nopadding rounded">
             <span class="phone">(888) 555-1212 </span>
             <span class="agent">Speak to a licensed agent</span>
         </div>
     </header>
 
-    <section class="banner">
+    <section class="banner container">
         <div class="first">Get a personalized quote today!</div>
         <div class="second">Choose your plan</div>
         <div class="form">
@@ -42,14 +42,14 @@
         </div>
     </section>
         
-    <section class="whyInsurewave">
-        <div class="answer">
+    <section class="whyInsurewave container">
+        <div class="answer col-sm-4">
             <h2>WHY INSUREWAVE</h2> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             <input type="button" value="LEARN MORE ABOUT US">
         </div>
-        <div class="achievements">
+        <div class="achievements col-sm-8">
             <ul>
                 <li>
                     <span><img src="src/img/flag_icon.png" alt="Insurewave" width="24" height="42"/></span>
@@ -75,12 +75,12 @@
         </div>
     </section>
         
-    <section class="toolsAndResourcesHeading">
+    <section class="toolsAndResourcesHeading container-fluid">
         <h2>Our Tools and Resources</h2>
     </section>
         
-    <section class="toolsAndResources">
-        <div class="col-left">
+    <section class="toolsAndResources container">
+        <div class="col-left col-sm-6">
             <div class="resource">
                 <img src="src/img/search_icon.png" alt="Insurewave" width="40" height="40"/>
                 <h2>Find a Doctor</h2>
@@ -94,29 +94,73 @@
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             </div>
         </div>
-        <div class="col-right">
+        <div class="col-right col-sm-6">
             <img src="src/img/video_image.png" alt="Insurewave" width="400" height="219"/>
             <p><a href="#">More Videos</a></p>
         </div>
     </section>
 
-    <section class="professioinalServices">
+    <section id="tabs" class="professionalServices container">
         <h2>Professional Services</h2>
         <ul class="menu">
-            <li><a href="#">Health</a></li> 
-            <li><a href="#">Dental</a></li> 
-            <li><a href="#">Vision</a></li>
-            <li><a href="#">Travel</a></li> 
-            <li><a href="#">Long Term care</a></li>
-            <li><a href="#">Life Insurance</a></li> 
-            <li><a href="#">Short Term Health</a></li>
-            <li><a href="#">Disability Insurance</a></li>
+            <li><a href="#tabs-1">Health</a></li> 
+            <li><a href="#tabs-2">Dental</a></li> 
+            <li><a href="#tabs-3">Vision</a></li>
+            <li><a href="#tabs-4">Travel</a></li> 
+            <li><a href="#tabs-5">Long Term care</a></li>
+            <li><a href="#tabs-6">Life Insurance</a></li> 
+            <li><a href="#tabs-7">Short Term Health</a></li>
+            <li><a href="#tabs-8">Disability Insurance</a></li>
         </ul>
-        <div id="professionalServicesTab" class="tab">
-            <div class="col-left">
+        <div id="tabs-1" class="tab">
+            <div class="col-sm-6">
                 <img src="src/img/long-term-care.png" alt="Insurewave" width="400" height="262" />
             </div>
-            <div class="col-right">
+            <div class="col-sm-6">
+                <h3>Health</h3>
+                <ul>
+                    <li>Achieve a 20% or more increase in orders and revenue within first 30 days of program implementation,</li>
+                </ul>
+            </div>  
+        </div>
+        <div id="tabs-2" class="tab">
+            <div class="col-sm-6">
+                <img src="src/img/long-term-care.png" alt="Insurewave" width="400" height="262" />
+            </div>
+            <div class="col-sm-6">
+                <h3>Dental</h3>
+                <ul>
+                    <li>Achieve a 20% or more increase in orders and revenue within first 30 days of program implementation,</li>
+                </ul>
+            </div>  
+        </div>
+        <div id="tabs-3" class="tab">
+            <div class="col-sm-6">
+                <img src="src/img/long-term-care.png" alt="Insurewave" width="400" height="262" />
+            </div>
+            <div class="col-sm-6">
+                <h3>Vision</h3>
+                <ul>
+                    <li>Achieve a 20% or more increase in orders and revenue within first 30 days of program implementation,</li>
+                </ul>
+            </div>  
+        </div>
+        <div id="tabs-4" class="tab">
+            <div class="col-sm-6">
+                <img src="src/img/long-term-care.png" alt="Insurewave" width="400" height="262" />
+            </div>
+            <div class="col-sm-6">
+                <h3>Travel</h3>
+                <ul>
+                    <li>Achieve a 20% or more increase in orders and revenue within first 30 days of program implementation,</li>
+                </ul>
+            </div>  
+        </div>
+        <div id="tabs-5" class="tab">
+            <div class="col-sm-6">
+                <img src="src/img/long-term-care.png" alt="Insurewave" width="400" height="262" />
+            </div>
+            <div class="col-sm-6">
                 <h3>Long Term Care Insurance</h3>
                 <ul>
                     <li>Achieve a 20% or more increase in orders and revenue within first 30 days of program implementation,</li>
@@ -128,24 +172,73 @@
                 </ul>
             </div>  
         </div>
+        <div id="tabs-6" class="tab">
+            <div class="col-sm-6">
+                <img src="src/img/long-term-care.png" alt="Insurewave" width="400" height="262" />
+            </div>
+            <div class="col-sm-6">
+                <h3>Life Insurance</h3>
+                <ul>
+                    <li>Achieve a 20% or more increase in orders and revenue within first 30 days of program implementation,</li>
+                </ul>
+            </div>  
+        </div>
+        <div id="tabs-7" class="tab">
+            <div class="col-sm-6">
+                <img src="src/img/long-term-care.png" alt="Insurewave" width="400" height="262" />
+            </div>
+            <div class="col-sm-6">
+                <h3>Short Term Health</h3>
+                <ul>
+                    <li>Achieve a 20% or more increase in orders and revenue within first 30 days of program implementation,</li>
+                </ul>
+            </div>  
+        </div>
+        <div id="tabs-8" class="tab">
+            <div class="col-sm-6">
+                <img src="src/img/long-term-care.png" alt="Insurewave" width="400" height="262" />
+            </div>
+            <div class="col-sm-6">
+                <h3>Disability Insurance</h3>
+                <ul>
+                    <li>Achieve a 20% or more increase in orders and revenue within first 30 days of program implementation,</li>
+                </ul>
+            </div>  
+        </div>
     </section>
 
     <section class="testimonials">
-        <div class="tab">
-            <span class="leftArrow"><img src="src/img/arrow_left_icon.png" alt="Insurewave" width="11" height="20" /></span>
-            <div class="content">
-                <h2>Our Clients Love Us For A Real Reason</h2>
-                <img src="src/img/testimonials.png" alt="Insurewave" width="217" height="216" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <div><strong>JANE</strong> | CEO at webDAE</div>
+        <div id="myCarousel" class="tab container carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="content item active">
+                    <h2>Our Clients Love Us For A Real Reason</h2>
+                    <img src="src/img/testimonials.png" alt="Insurewave" width="217" height="216" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <div><strong>JANE</strong> | CEO at webDAE</div>
+                </div>
+
+                <div class="content item">
+                    <h2>Our Clients Love Us For A Real Reason</h2>
+                    <img src="src/img/testimonials.png" alt="Insurewave" width="217" height="216" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <div><strong>JANE1</strong> | CEO at webDAE</div>
+                </div>
+
+                <div class="content item">
+                    <h2>Our Clients Love Us For A Real Reason</h2>
+                    <img src="src/img/testimonials.png" alt="Insurewave" width="217" height="216" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <div><strong>JANE2</strong> | CEO at webDAE</div>
+                </div>
             </div>
-            <span class="rightArrow"><img src="src/img/arrow_right_icon.png" alt="Insurewave" width="11" height="20" /></span>
+            <span class="leftArrow"><a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><img src="src/img/arrow_left_icon.png" alt="Insurewave" width="11" height="20" /></a></span>
+            <span class="rightArrow"><a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><img src="src/img/arrow_right_icon.png" alt="Insurewave" width="11" height="20" /></a></span>
         </div>
     </section>
         
     <footer>
-        <div class="footerWrapper">
-            <div class="siteMap">
+        <div class="footerWrapper container">
+            <div class="siteMap col-sm-4">
                 <h2>Site Map</h2>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -159,7 +252,7 @@
                     <li><a href="#">Customer Support</a></li>
                 </ul>
             </div>
-            <div class="LatestBlogArticles">
+            <div class="LatestBlogArticles col-sm-4">
                 <h2>Latest Blog Articles</h2>
                 <ul>
                     <li><a href="#">Tips When Buying Health Insurance</a></li>
@@ -169,7 +262,7 @@
                     <li><a href="#">Benefits of Having a Health Insurance Plan</a></li>
                 </ul>
             </div>
-            <div class="contactUs">
+            <div class="contactUs col-sm-4">
                 <h2>Get In Touch With Us</h2>
                 <input type="text" name="name" placeholder="Name" />
                 <input type="text" name="email" placeholder="Email" />
@@ -182,5 +275,14 @@
     <!-- [core js] -->
     <script src="src/js/build/development/commons.js"></script>
     <script src="src/js/build/development/common.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap-sprockets.js"></script>
+    <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script>
+    $( function() {
+        $( "#tabs" ).tabs(); 
+    } );
+    </script>
 </body>
 </html>
