@@ -150,7 +150,7 @@ header{
     :before{
         @include tools-resources-background();
         content: "";
-        height: 40%;
+        height: 52%;
         left: 0;
         margin-top: -1%;
         position: absolute;
@@ -162,7 +162,7 @@ header{
     :after{
         @include tools-resources-background();
         content: "";
-        height: 40%;
+        height: 52%;
         left: 0;
         margin-bottom: -1%;
         position: absolute;
@@ -174,7 +174,7 @@ header{
     h2{
         @include Poppins-Light();
         text-align: center;
-        padding:0.5em;
+        padding:0.5rem;
     }
 }
 
@@ -193,7 +193,7 @@ header{
             }
             p{
                 @include Poppins-Regular();
-                line-height:2em;
+                line-height:2rem;
                 padding: 0 0 5%;
             }
         }
@@ -243,13 +243,13 @@ header{
         }
         h3{
             @include Poppins-Medium();
-            font-size: 1.5em;
+            font-size: 1.5rem;
         }
         ul{
             margin: 5%;
             li{
                  @include Poppins-Regular();
-                 line-height: 2em;
+                 line-height: 2rem;
                  list-style-image: url(#{$path-image-directories}tick_icon.png);
             }
         }
@@ -292,11 +292,11 @@ header{
             margin: 10% 20%;
             h2{
                 @include Poppins-Regular();
-                font-size: 2em;
+                font-size: 2rem;
             }
             p{
                 @include Poppins-Regular();
-                line-height: 2em;
+                line-height: 2rem;
                 padding: 2% 0;
             }
         }
@@ -311,7 +311,7 @@ footer{
         @include center-align();
         h2{
             @include Poppins-Medium();
-            font-size: 1.5em;
+            font-size: 1.5rem;
         }
         div{
             float:left;
@@ -320,11 +320,11 @@ footer{
                 margin: 5%;
                 li{
                     padding: 1% 0;
-                    line-height: 2em;
+                    line-height: 2rem;
                     list-style-image: url(#{$path-image-directories}list_arrow_icon.png);
                     a{
                         @include Poppins-Regular();
-                        font-size: 1.2em;
+                        font-size: 1.2rem;
                     }
                 }
             }
